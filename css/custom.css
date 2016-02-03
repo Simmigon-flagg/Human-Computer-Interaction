@@ -2,5 +2,12 @@ body nav{
     background-color: BLUE;
 }
 nav div div ul li a {
-	color: White;
+	color: WHITE;
+}
+nav div div button span {
+	color: WHITE;
+}
+th, td {
+	padding: 15px;
+    text-align: left;
 }
