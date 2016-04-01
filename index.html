@@ -1,66 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Simmigon Flagg Portfolio</title>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Simmigon Flagg</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
-
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  </style>
 </head>
 <body>
 
-<nav  class="navbar navbar-inverse">
-  <div class="container-fluid">
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
+      <a class="navbar-brand" href="index.html">Simmigon Flagg</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="organizational/index.html">Organization</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="organizational/index.html">Organizational</a></li>
+        <li><a href="http://ironduke.cs.gsu.edu/~torchlight/home.html">Torchlight Group Project</a></li>
+        <li><a href="#"></a></li>
       </ul>
-	
-      
     </div>
   </div>
 </nav>
 
-<div class="jumbotron">
-  <div class="container text-center">
-    <div class="row">
-        <div class="col-sm-3">
-            <img src="images/received_10207039004607061.jpeg" class="img-responsive" style="width:100%" style="border:5%" alt="Image">
-        </div>
-		<div class="col-sm-3"> 
-		<div class="container">            
-		  <table class="table ">
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Software Engineer</h3>
+  <img src="images/GSU.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>Contact: sflagg@student.gsu.edu</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin">Current Classes</h3>
+  		<div class="container">            
+		  <table class="table table-condensed">
 			<tbody>			
-				<tr>
-					<th >Simmigon Flagg</th>
-				</tr>
-				<tr>
-					<th >Contact:</th>
-				</tr>
-				<tr>
-					<td>sflagg@student.gsu.edu</td>
-				</tr>
-				<tr>
-					<th >2016 CLASSES:</th>
-				</tr>
-					<tr>
 					<td >BIG DATA PROGRAMMING</td>
 					<td >HUMAN-COMPUTER INTERACTION</td>
 				</tr>
@@ -70,47 +96,54 @@
 				</tr>
 				<tr>
 					<td >SOFTWARE ENGINEERING</td>
+					<td ></td>
 				</tr>
 			</tbody>
 		  </table>
 		</div>
-      
-    </div>
+</div>
 
-</div>
-</div>
- <hr /> 
+<!-- Third Container (Grid) -->
 <div class="container-fluid bg-3 text-center">    
-  <h3>CLASSES PROJECTS</h3><br>
+  <h3 class="margin">CLASS and PERSONAL PROJECTS<br><br>
   <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-4">
       <p>Math Drills for practicing math.</p>
         <p><a href="http://mathdrills.azurewebsites.net/">Math Drills</a></p>
       <img src="images/MathDrillsForKids.png" class="img-responsive" style="width:200%;height:250px" alt="Image">
     </div>
-    <div class="col-sm-3"> 
+	<br>
+    <div class="col-sm-4"> 
       <p>POS System for a restaurant.</p>
         <p><a href="https://github.com/Simmigon-flagg/POS_System_Project/">POS System</a></p>
       <img src="images/pos-system-companies.png" class="img-responsive" style="width:400%;height:250px" alt="Image">
     </div>
-    <div class="col-sm-3"> 
+	<br>
+	<div class="col-sm-4"> 
       <p>Apartment Desktop Application</p>
 	  <p><a href="https://github.com/Simmigon-flagg/Apartment_Management_System">Desktop Version</a></p>
        <img src="images/Rental_Application.gif" class="img-responsive" style="width:200%;height:250px" alt="Image">
     </div>
-    <div class="col-sm-3"> 
-      <p>Apartment Web Application</p>
+	<br>
+    <div class="col-sm-4"> 
+       <p>Apartment Web Application</p>
 	  <p><a href="https://github.com/Simmigon-flagg/Apartment_Management_System_Website/">Web Version</a></p>
        <img src="images/Rental_Application.gif" class="img-responsive" style="width:200%;height:250px" alt="Image">
     </div>
+	   <div class="col-sm-4"> 
+       <p>Music Queue Application</p>
+	  <p><a href="#">Coming Soon</a></p>
+       <img src="images/Vinyl_Icon.png" class="img-responsive" style="width:200%;height:250px" alt="Image">
+    </div>
   </div>
-</div><br>
-<hr />
- 
-<div class="container-fluid bg-3 text-center">  <h3>TECHNOLOGY SUMMARY</h3><br>   
+</div>
+
+<!-- Fourth Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">TECHNOLOGY SUMMARY</h3><br>
   <div class="row">
-    <div class="col-sm-3"> 
-		<div class="container">            
+    <div >
+     <div class="container">            
 		  <table class="table table-condensed">
 			<thead>
 			  <tr>
@@ -132,10 +165,8 @@
 			</tbody>
 		  </table>
 		</div>
-      
     </div>
-    <div class="col-sm-3"> 
-    
+    <div > 
       <div class="container">            
 		  <table class="table table-condensed">
 			<thead>
@@ -159,9 +190,8 @@
 		  </table>
 		</div>
     </div>
-    <div class="col-sm-3">
-     
-	  <div class="container">            
+	<div > 
+      <div class="container">            
 		  <table class="table table-condensed">
 			<thead>
 			  <tr>
@@ -183,13 +213,16 @@
 			</tbody>
 		  </table>
 		</div>
+    </div>
+    <div > 
       
     </div>
   </div>
-</div><br><br>
+</div>
 
-<footer class="container-fluid text-center">
-  <p>Georgia State University Graduation 2016</p>
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p><a href="http://www.gsu.edu">Georgia State University Graduate 2016</a></p> 
 </footer>
 
 </body>
